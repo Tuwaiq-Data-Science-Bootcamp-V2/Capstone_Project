@@ -15,3 +15,4 @@ virus, trojan, or any other type of malware that will compromise your machine or
 
 
 https://www.researchgate.net/publication/360254493_An_Adversarial_Attack_Analysis_on_Malicious_Advertisement_URL_Detection_Framework
+file:///Users/dhaidan/Downloads/2205.05121.pdf
