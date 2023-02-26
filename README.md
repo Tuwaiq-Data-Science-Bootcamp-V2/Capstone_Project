@@ -1,5 +1,5 @@
 
-<img src='SecureClick.jpg' width=400>
+<img src='Sc.jpg' width=400>
 
 
 # Capstone Project 🎓 | Secure Click.
