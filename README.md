@@ -1,56 +1,36 @@
 
-<img src='Sc.jpg' width=400>
+# Capstone Project 🎓 | 
+
+# <img src='Sc.jpg' width=70> Secure Click.
+
+### -  Team members (We worked together <img src='Togatherr.jpeg' width=40>):
+   - Razan Alyahya
+   - Rahaf Aladhyani
+   - Munirah Alsahly
+   - Waleed Almutairi
+       
+       
 
 
-# Capstone Project 🎓 | Secure Click.
+### - Objective:
 
-## Team members:
-#### **We worked together** 👍🏻 
+  &nbsp;&nbsp;&nbsp; &nbsp; **[Phishing](https://www.imperva.com/learn/application-security/phishing-attack-scam/)** is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware, the freezing of the system as part of a ransomware attack or the revealing of sensitive information.
 
-- **Razan Alyahya**
-- **Rahaf Aladhyani**
-- **Munirah Alsahly**
-- **Waleed Almutairi**
+An attack can have devastating results. For individuals, this includes unauthorized purchases, the stealing of funds, or identify theft.
 
-<img src='Togatherr.jpeg' width=200>
+Did you know that [91% ](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiBnP_Z8rf9AhVH7O0KHYdwDHcYABAAGgJkZw&ohost=www.google.com&cid=CAESbeD2sOgzZ1ee7rJd_wc_-Za_QH9TNJ9GzFiI4m5IgAWuICh4oDp6oNclW0o2CUEi9VX0hDZXXMr0ncrZwKv-HJ1Dw98DQ8YUY80GRFXNFjaAx_azeWOvkHOJf9UIJ4rl18R__C65AUG8AojYFWY&sig=AOD64_0uc7BBmfArAG1gF7i_K7DHHcZJsQ&q&adurl&ved=2ahUKEwjf9vHZ8rf9AhXJa8AKHeBfD0cQ0Qx6BAgDEAE&nis=8) of successful data breaches started with a spear phishing attack.?
+
+As technology continues to grow, phishing techniques started to progress rapidly and this needs to be prevented by using anti-phishing mechanisms to detect phishing. Machine learning and deep Learning are powerful tools used to strive against phishing attacks. So in this project, we will predict phishing (Sites and Messages) and fish what's phishing you.
 
 
-## Objective:
-**Phishing** is a solicitation tactic used by phishing artists to exploit the personal details of unsuspecting users. A phishing site is a fake website that looks similar in appearance but different in destination. Unsuspecting users post their data believing that these sites come from trusted financial institutions. Many anti-phishing technologies are constantly emerging, but scammers are creating new technology by breaking all anti-phishing mechanisms. Hence an effective phishing site prediction mechanism is needed. So in this project we will predict phishing sites and fish what's phishing you.
 
+### - Dataset Overview:
+ - For URL
+The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset).
+This dataset contains only URL and Type.
 
------ another------
-
-**Phishing** is a common attack on credulous people by
-making them to disclose their unique information using
-counterfeit websites. The objective of phishing website URLs is
-to purloin the personal information like user name, passwords
-and online banking transactions. Phishers use the websites
-which are visually and semantically similar to those real
-websites. As technology continues to grow, phishing techniques
-started to progress rapidly and this needs to be prevented by
-using anti-phishing mechanisms to detect phishing. Machine
-learning is a powerful tool used to strive against phishing
-attacks. This project surveys the features used for detection and
-detection techniques using machine learning.
-Phishing is popular among attackers, since it is easier to trick
-someone into clicking a malicious link which seems legitimate
-than trying to break through a computer’s defense systems. The
-malicious links within the body of the message are designed to
-make it appear that they go to the spoofed organization using
-that organization’s logos and other legitimate contents.
-Here, we explain phishing domain (or Fraudulent Domain)
-characteristics, the features that distinguish them from
-legitimate domains, why it is important to detect these domains,
-and how they can be detected using machine learning and deep learning.
-
-
-## Dataset Overview:
+- For URL
 The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset)
-
-This dataset contains ---------
-
-
 
 ## Proposed Algorithms:
 
