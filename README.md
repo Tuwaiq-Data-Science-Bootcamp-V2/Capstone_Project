@@ -57,6 +57,7 @@ Random Forest|
 
 ### Final Results and Conclusion:
 - For WebSite
+we use Gradient Boosting model because it is the highest accuracy.
 <img src='image/Website.png' width=400>
 
 - For Dashboard
