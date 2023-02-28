@@ -23,7 +23,7 @@ As technology continues to grow, phishing techniques started to progress rapidly
 
 
 ### Dataset Overview:
-#### **For URL**
+#### - **For URL**
 
 The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset).
 This dataset contains only the URLs and Type.
@@ -44,20 +44,21 @@ virus, trojan, or any other type of malware that will compromise your machine or
 
 For URL part, features extraction have been done include URL length, URL digit count, URL letter count, URL Special character count ... etc.
 
-#### **For SMS and Email**
+#### - **For SMS and Email**
 The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
 This dataset contains only the Text and Type including(Ham and Spam).
 
 
 
-## Proposed Algorithms:
-#### **For URL**
+### Proposed Algorithms:
+#### - **For URL**
 
-#### **For SMS and Email**
+#### - **For SMS and Email**
 
 
-## Final Results and Conclusion:
-#### **For WebSite**
+### Final Results and Conclusion:
+- For WebSite
 <img src='image/Website.png' width=400>
-#### **For Dashboard**
+
+- For Dashboard
 <img src='image/Dashboard.png' width=400>
