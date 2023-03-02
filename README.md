@@ -44,6 +44,7 @@ This dataset contains only the Text and Type including(Ham and Spam).
 
 ### Proposed Algorithms:
 #### &nbsp;&nbsp;&nbsp; - **For URL**
+We used Machine Learning technique.
 | Model               | Accuracy                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 Logistic regression |	
@@ -53,11 +54,13 @@ Random Forest|
 
 
 #### &nbsp;&nbsp;&nbsp; - **For SMS and Email**
-
+We used Deep Learning technique.
+| Model               | Accuracy                                                                                                                                                              |
+| -------------------- | ---------------------------------------- |
+Sequential Model |	98%
 
 ### Final Results and Conclusion:
 - For WebSite
-we use Gradient Boosting model because it is the highest accuracy.
 
 <img src='image/Website.png' width=400>
 
