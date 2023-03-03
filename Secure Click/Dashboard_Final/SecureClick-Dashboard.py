@@ -27,7 +27,7 @@ df_url = pd.read_csv('finalURL_version3.csv')
 # In[3]:
 
 
-emailSMSData = pd.read_csv('spam1.csv', encoding='latin-1')
+emailSMSData = pd.read_csv('arabicEnglishDashboar.csv')
 
 
 # In[4]:
@@ -43,8 +43,8 @@ import plotly.graph_objects as go
 features = ['?','=','.','%','//']
 names = {'?':'Question Mark (?)','=':'Equal sign(=)','.':'Dot (.)','%':'Precentage (%)','//':'Double Slash (//)'}
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
-app = JupyterDash(external_stylesheets=[dbc.themes.LUMEN, dbc_css])
-header = html.H1("SECURE CLICK DASHBOARD", className="text-white p-2 mb-2 text-center", style={"background-color":"#73a1c7"})
+app = JupyterDash(external_stylesheets=[dbc.themes.DARKLY, dbc_css])
+header = html.H2("SECURE CLICK DASHBOARD", className="text-white p-2 mb-2 text-center", style={"background-color":"#73a1c7"})
 
 # types dropdown menu
 typeDropdown = html.Div(
@@ -269,12 +269,14 @@ def updateCharters(char,attackType):
         result['type']=typeDict[attackType]
         fig = px.bar(data_frame=result,x='type',
                y=char,
-               barmode='group',title='Average numbe of symbols for each type').update_layout(title_x=0.5)
+               barmode='group',title='Average number of symbols for each type',
+                     color_discrete_map={'?':'#90caf9','=':'#e7cbcb','.':'#567995',
+                                   '%':'#73a1c7','//':'#c47d7d'}, template='plotly_white').update_layout(title_x=0.5)
     else:
         result = All[['?','=','.','%','//']]
         result['type']=['benign','defacement','phishing','malware']
         fig = px.bar(data_frame=result,x='type',
-               y=char, barmode='group',title='Average numbe of symbols for each type', 
+               y=char, barmode='group',title='Average number of symbols for each type', 
                color_discrete_map={'?':'#90caf9','=':'#e7cbcb','.':'#567995',
                                    '%':'#73a1c7','//':'#c47d7d'}, template='plotly_white').update_layout(title_x=0.5)
     return fig
@@ -314,7 +316,7 @@ def updateNumLetCount(alphaNum, countSlider):
         y=letters[alphaNum],
         name= alphaNum,
         marker_color='#73a1c7'
-        )).update_layout(template='plotly_white')
+        )).update_layout(template='plotly_white', title=title).update_layout(title_x=0.5)
 
     return fig2, maxVal, minVal
 
@@ -382,22 +384,31 @@ def updateSMSGraph(smsType, checkListChoice):
     
     if smsType == 1:  
         smsType = 'words_count'
+        title = 'The word count distribution'
     elif smsType == 2:
         smsType = 'charcaters_count'
+        title ='The charcaters count distribution'
     else:
         smsType = 'sentence_count'
+        title ='The sentence count distribution'
 
     if len(checkListChoice) ==2:     
         data = emailSMSData[((emailSMSData["target"]=='ham') | (emailSMSData["target"]=='spam'))]
+        color={checkListChoice[0]:'#73a1c7',checkListChoice[1]:'#c47d7d' }
+
     elif len(checkListChoice) == 0:
+        checkListChoice=["ham","spam"]
         data = emailSMSData[((emailSMSData["target"]=='ham') | (emailSMSData["target"]=='spam'))]
+        color={checkListChoice[0]:'#73a1c7',checkListChoice[1]:'#c47d7d' }
     elif checkListChoice[0] == 'spam':
-         data = emailSMSData[emailSMSData["target"]=='spam']
+        data = emailSMSData[emailSMSData["target"]=='spam']
+        color={checkListChoice[0]:'#73a1c7'}
     else:
-         data = emailSMSData[emailSMSData["target"]=='ham']
+        data = emailSMSData[emailSMSData["target"]=='ham']
+        color={checkListChoice[0]:'#73a1c7'}
 
     fig4 = px.histogram(data, x=smsType,color='target',template='plotly_white', 
-                color_discrete_map={checkListChoice[0]:'#73a1c7',checkListChoice[1]:'#c47d7d' })
+                color_discrete_map=color,title = title).update_layout(title_x=0.5)
 
 
     return fig4
