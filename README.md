@@ -50,12 +50,20 @@ Gradient Boosting	|
 Decision Tree	|
 Random Forest|	
 
+##### **The resean for choosing the models:**
+After multiple research, we found that there is two reaserch papers that used Decesion Tree, Random Forest and Logistic Regression and show a high results. [[1]](https://arxiv.org/pdf/2205.05121.pdf)[[2]](https://www.researchgate.net/profile/Rishikesh-Mahajan/publication/328541785_Phishing_Website_Detection_using_Machine_Learning_Algorithms/links/5d0397fd92851c9004394af4/Phishing-Website-Detection-using-Machine-Learning-Algorithms.pdf)
+
+
+The main reaseon for choosing thses for models that we found a [research paper] that used the same models and shown a high accuracy. as result, we choose to use Decesion Tree, Random Forest and Logistic Regression. 
 
 #### &nbsp;&nbsp;&nbsp; - **For SMS and Email**
 We used Deep Learning technique.
 | Model               | Accuracy                                                                                                                                                              |
 | -------------------- | ---------------------------------------- |
 Sequential Model |	98%
+
+**The resean for choosing the models:**
+The main reaseon for choosing thses for models that we found a [research paper](https://arxiv.org/pdf/2205.05121.pdf) that used the same models and shown a high accuracy. as result, we choose to use Decesion Tree, Random Forest and Logistic Regression. 
 
 ### Final Results and Conclusion:
 - For WebSite
