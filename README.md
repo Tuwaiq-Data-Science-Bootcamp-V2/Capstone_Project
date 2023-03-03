@@ -69,4 +69,4 @@ Sequential Model |	98%
 <img src='image/Website.png' width=400>
 
 - For Dashboard
-<img src='image/Dashboard.png' width=400>
+<img src='image/dashboard-dark.PNG' width=400>
