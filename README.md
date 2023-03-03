@@ -52,7 +52,7 @@ Random Forest|
 
 **Reseans for choosing the models:**
 - After multiple research, we found two reaserch papers that used Decesion Tree, Random Forest and Logistic Regression and show high accuracy results. [[1]](https://arxiv.org/pdf/2205.05121.pdf)[[2]](https://www.researchgate.net/profile/Rishikesh-Mahajan/publication/328541785_Phishing_Website_Detection_using_Machine_Learning_Algorithms/links/5d0397fd92851c9004394af4/Phishing-Website-Detection-using-Machine-Learning-Algorithms.pdf)
-- For the Gradient Boosting model we also found a [research paper]() that used this model and it shows a high acuracy result. 
+- For the Gradient Boosting model we also found a research paper[[1]](https://www.ijraset.com/research-paper/url-based-phishing-website-detection)[[2]](https://www.sciencedirect.com/science/article/abs/pii/S0167865521003445) that used this model and it shows a high acuracy result. 
 
 #### &nbsp;&nbsp;&nbsp; - **For SMS and Email**
 We used Deep Learning technique.
