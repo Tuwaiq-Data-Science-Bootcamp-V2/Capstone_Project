@@ -61,7 +61,7 @@ We used Deep Learning technique.
 Sequential Model |	98%
 
 **Reason for choosing the model:**
-
+- After multiple research, we found two articles that used sequential model [[1]](https://www.twilio.com/blog/spam-deep-learning-detection-sms-keras-python-twilio)[[2]](https://www.geeksforgeeks.org/detecting-spam-emails-using-tensorflow-in-python/)and show high accuracy results. 
 
 ### Final Results and Conclusion:
 - For WebSite
