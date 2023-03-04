@@ -30,13 +30,15 @@ Sentiment classifier<br>
 |Positive|0.83|0.71|0.77|
 |Neutral|0.78|0.77|0.78|
 |Negative|0.78|0.90|0.83|
-|AVG|0.80|0.79|0.79|<br>
+|AVG|0.80|0.79|0.79|
+<br>
 Speech act classifier<br>
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
 |Positive|0.95|0.91|0.93|
 |Neutral|0.88|0.93|0.90|
-|AVG|0.92|0.92|0.92|<br>
+|AVG|0.92|0.92|0.92|
+<br>
 Sarcasm classifier<br>
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
