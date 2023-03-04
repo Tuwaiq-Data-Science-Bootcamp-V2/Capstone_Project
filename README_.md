@@ -35,14 +35,20 @@ The model architecture with more details:<br>
 ### Speech act classifier
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
-|Positive|0.95|0.91|0.93|
-|Neutral|0.88|0.93|0.90|
+|expression|0.95|0.91|0.93|
+|assertion|0.88|0.93|0.90|
 |AVG|0.92|0.92|0.92|
 
 ### Sarcasm classifier
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
-|Positive|0.94|0.86|0.90|
-|Neutral|0.72|0.86|0.79|
+|not sarcastic|0.94|0.86|0.90|
+|sarcastic|0.72|0.86|0.79|
 |AVG|0.87|0.86|0.86|
 
+## Team members
+|Name|Role|
+|---|---|
+|faris adel alahmadi|ML developer|
+|saed alshahrani|Data analysis|
+|moath almoghirah|UX/UI developer|
