@@ -8,5 +8,8 @@ Most of AI companies and startups provides AI services in a form of (get-data > 
 
 # Language analysis project
 ## project overview
-
+The project consist of two phases:<br>
+1. Simi supervised phase : In this phase we will create the data by making 2 models, one for sarcasm and one for sppech act.
+2. Final model phase : 
+<img src="project.png">
 ## Data set
