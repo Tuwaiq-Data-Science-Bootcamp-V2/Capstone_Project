@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Nocobot
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Nocobot</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'css/layout.css'%}" rel="stylesheet" type="text/css" media="all">
+  <style>
+     .my-element {
+       background-image: url("{% static 'images/Cyber attack-amico 6.png'%}");
+       }
+    .center {
+      position: absolute;
+      text-align: center;
+    }
+       .btn, .btn.inverse:hover{color:#FFFFFF; background-color:rgba(196,125,125,0.73); border-color:#FFFFFF;text-transform:capitalize}
+       .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;text-transform:capitalize}
+      .imgover:hover::before{background-color:rgba(196,125,125,0.0);/* #B946AD */}
+      .imgover, .imgover:hover::after{color:rgba(255, 255, 255, 0);}
+      .container{padding:0px 0
+      }
+      #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:rgba(196,125,125,0.73);}
+      #mainav li li a, #mainav .active li a{background-color:rgba(196,125,125,0.73);border-color:rgba(196,125,125,0.73)}
+       #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:rgba(196, 126, 126, 0.57);}
+       input:focus, textarea:focus, *:required:focus{border-color:#FFFFFF !important;}
+  </style>
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear" style="padding: 0px 0px;">
+<nav id="mainav" >
+        <!-- ################################################################################################ -->
+      <ul class="clear">
+            <li style="padding-right: 50%;" ><a href="/SMSEMAIL/" style="padding: 0 0;" >English </a></li>
+          <li><a href="AboutUsAr">معلومات عنا</a></li>
+          <li><a href="http://127.0.0.1:8011/">احصائيات البيانات</a></li>
+                    <li><a class="drop" href="#">تحقق من الخيار</a>
+            <ul>
+              <li><a href="/URLAr">رابط الموقع</a></li>
+              <li><a href="/SMSEMAILAR">الرسائل القصيرة</a></li>
+              <li><a href="/SMSEMAILAR">البريد إلإلكتروني</a></li>
+            </ul>
+          </li>
+          <li><a href="/Ar">الرئيسية</a></li>
+          <li><a href="/Ar" style="padding: 0 0;" > <img src="{% static 'images/5.png'%}" alt="logo"> </a></li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+  </div>
+</div>
+<!-- Top Background Image Wrapper -->
+<div class="bgded my-element ">
+
+  <div class="overlay">
+    <div id="pageintro" class="hoc clear" style="padding: 160px 0 370px;">
+      <article>
+        <h1 class="heading" style="font-size: 2rem;"> <i class="fa fa-globe"></i> ادخل نص الرسالة </h1>
+
+  <form action="resultSMSEMAIAr">
+    {% csrf_token %}
+      <textarea id="w3review" name="masage" rows="4" cols="50"class="btn btn-primary btn-lg btn-block" >نص الرسالة</textarea>
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='تحقق'>
+  </form>
+<br>
+        <form>
+          <input class="btn btn-primary btn-lg btn-block" type="button" value="عُد" onclick="history.back()">
+        </form>
+
+      </article>
+    </div>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<!-- JAVASCRIPTS -->
+<script src="{% static 'js/jquery.min.js'%}"></script>
+<script src="{% static 'js/jjquery.backtotop.js'%}"></script>
+<script src="{% static 'js/jjquery.mobilemenu.js'%}"></script>
+</body>
+</html>

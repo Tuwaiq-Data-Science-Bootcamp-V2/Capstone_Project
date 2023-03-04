@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+Template Name: Nocobot
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Nocobot</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'css/layout.css'%}" rel="stylesheet" type="text/css" media="all">
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+  <style>
+     .my-element {
+       background-image: url("{% static 'images/Cyber attack-amico 6.png'%}");
+       }
+    .center {
+      position: absolute;
+      text-align: center;
+    }
+       .btn, .btn.inverse:hover{color:#FFFFFF; background-color:rgba(196,125,125,0.73); border-color:#FFFFFF;text-transform:capitalize}
+       .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;text-transform:capitalize}
+      .imgover:hover::before{background-color:rgba(196,125,125,0.0);/* #B946AD */}
+      .imgover, .imgover:hover::after{color:rgba(255, 255, 255, 0);}
+      .container{padding:0px 0
+      }
+      #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:rgba(196,125,125,0.73);}
+      #mainav li li a, #mainav .active li a{background-color:rgba(196,125,125,0.73);border-color:rgba(196,125,125,0.73)}
+       #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:rgba(196, 126, 126, 0.57);}
+
+  </style>
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear" style="padding: 0px 0px;">
+<nav id="mainav" >
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+            <li><a href="/Ar/" style="padding: 0 0;" > <img src="{% static 'images/5.png'%}" alt="logo"> </a></li>
+          <li><a href=' /'>Home</a></li>
+          <li><a class="drop" href="#">Check Option</a>
+            <ul>
+              <li><a href="/URL">URL</a></li>
+              <li><a href="/SMSEMAIL">SMS</a></li>
+              <li><a href="/SMSEMAIL">Email</a></li>
+            </ul>
+          </li>
+          <li><a href="http://127.0.0.1:8011/">Dashboard</a></li>
+          <li><a href="/AboutUs">About Us</a></li>
+            <li style="padding-left: 50%;" ><a href="/Ar/" style="padding: 0 0;" > عربي </a></li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+  </div>
+</div>
+<!-- Top Background Image Wrapper -->
+<div class="bgded my-element ">
+
+  <div class="overlay">
+    <div id="pageintro" class="hoc clear" style="padding: 160px 0 300px;max-width: 50%;">
+      <article style="background-color: rgba(199, 198, 198, 0.3);">
+          {% if Predict_Mesage == 'Spam' %}
+          <img src="{% static 'images/09.png'%}" height="10" width="10" alt="BOOM">
+          {% elif Predict_Mesage == 'Ham' %}
+          <img src="{% static 'images/04.png'%}" height="10" width="10" alt="BOOM">
+        {% else %}
+        <h1 style="color: rgb(31, 15, 15); font-weight: 900;">ERROR</h1>
+        {% endif %}
+
+         <br>
+        <br>
+
+        <form>
+          <input class="btn btn-primary btn-lg btn-block" type="button" value="Go back!" onclick="history.back()">
+        </form>
+
+
+      </article>
+    </div>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- JAVASCRIPTS -->
+<script src="{% static 'js/jquery.min.js'%}"></script>
+<script src="{% static 'js/jjquery.backtotop.js'%}"></script>
+<script src="{% static 'js/jjquery.mobilemenu.js'%}"></script>
+</body>
+</html>

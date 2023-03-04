@@ -1,71 +1,83 @@
-# Capstone Project 🎓🥳
+
+# Capstone Project 🎓 
+
+# <img src='image/6.png' width=70> Secure Click
+
+### Team members (We worked together <img src='image/Togatherr.jpeg' width=40>)
+   - Razan Alyahya
+   - Rahaf Aladhyani
+   - Munirah Alsahly
+   - Waleed Almutairi
+         
+
+### Objective:
+
+  &nbsp;&nbsp;&nbsp; &nbsp; **[Phishing](https://www.imperva.com/learn/application-security/phishing-attack-scam/)** is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware, the freezing of the system as part of a ransomware attack or the revealing of sensitive information. An attack can have devastating results. For individuals, this includes unauthorized purchases, the stealing of funds, or identify theft.
+
+Did you know that [91% ](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiBnP_Z8rf9AhVH7O0KHYdwDHcYABAAGgJkZw&ohost=www.google.com&cid=CAESbeD2sOgzZ1ee7rJd_wc_-Za_QH9TNJ9GzFiI4m5IgAWuICh4oDp6oNclW0o2CUEi9VX0hDZXXMr0ncrZwKv-HJ1Dw98DQ8YUY80GRFXNFjaAx_azeWOvkHOJf9UIJ4rl18R__C65AUG8AojYFWY&sig=AOD64_0uc7BBmfArAG1gF7i_K7DHHcZJsQ&q&adurl&ved=2ahUKEwjf9vHZ8rf9AhXJa8AKHeBfD0cQ0Qx6BAgDEAE&nis=8) of successful data breaches started with a spear phishing attack.?
+
+As technology continues to grow, phishing techniques started to progress rapidly and this needs to be prevented by using anti-phishing mechanisms to detect phishing. Machine learning and deep Learning are powerful tools used to strive against phishing attacks. So in this project, we will predict phishing (Sites and Messages) and fish what's phishing you.
 
 
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204110091-be66e56a-629b-417b-88b7-8df7f29e5fd0.png" width="700" />
-</p>
+
+### Dataset Overview:
+#### &nbsp;&nbsp;&nbsp; - **For URL**
+
+The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/siddharthkumar25/malicious-and-benign-urls?resource=download)
+This dataset contains only the URLs and Type.
+
+**The Malicious is classified into:**
+| Type               | Describes                                                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+[Defacement](https://www.imperva.com/learn/application-security/website-defacement-attack/)|Web defacement is an attack in which malicious parties penetrate a website and replace content on the site with their own messages. The messages can convey a political or religious message, profanity or other inappropriate content that would embarrass website owners, or a notice that the website has been hacked by a specific hacker group.
+[Phishing](https://www.barracuda.com/support/glossary/url-phishing)|Cybercriminals use phishing URLs to try to obtain sensitive information for malicious use, such as usernames, passwords, or banking details. They send phishing emails to direct their victims to enter sensitive information on a fake website that looks like a legitimate website.
+[Malware](https://gatefy.com/blog/what-malicious-url/)|Malicious URL is a link created with the purpose of promoting scams, attacks, and frauds. By clicking on an infected URL, you can download ransomware, virus, trojan, or any other type of malware that will compromise your machine or even your network, in the case of a compan
+
+For the URL part, features extraction has been done including URL length, URL digit count, URL letter count, URL Special character count ... etc.
+
+#### &nbsp;&nbsp;&nbsp; - **For SMS and Email**
+The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
+This dataset contains only the Text and Type including(Ham and Spam).
+
+### Proposed Algorithms:
+#### &nbsp;&nbsp;&nbsp; - **For URL**
+- Flow-chart of Phishing detection method <br>
+<img src='image/Flow-chart of Phishing detection method2.png' width=600>
+
+We used Machine Learning technique.
+
+| Model               | Accuracy                                                                                                                                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+Logistic regression |97%
+Gradient Boosting	|98%
+Decision Tree	| 97%
+Random Forest|	98%
+
+**Reason for choosing the models:**
+- After multiple research, we found two reaserch papers that used Decesion Tree, Random Forest and Logistic Regression and show high accuracy results. [[1]](https://arxiv.org/pdf/2205.05121.pdf)[[2]](https://www.researchgate.net/profile/Rishikesh-Mahajan/publication/328541785_Phishing_Website_Detection_using_Machine_Learning_Algorithms/links/5d0397fd92851c9004394af4/Phishing-Website-Detection-using-Machine-Learning-Algorithms.pdf)
+- For the Gradient Boosting model we also found a research paper[[1]](https://www.ijraset.com/research-paper/url-based-phishing-website-detection)[[2]](https://ieeexplore.ieee.org/abstract/document/9400317) that used this model and it shows a high acuracy result. 
+
+#### &nbsp;&nbsp;&nbsp; - **For SMS and Email**
+We used Deep Learning technique.
+| Model               | Accuracy                                                                                                                                                              |
+| -------------------- | ---------------------------------------- |
+Sequential Model |	98%
+
+**Reason for choosing the model:**
+- After multiple research, we found two articles that used sequential model [[1]](https://www.twilio.com/blog/spam-deep-learning-detection-sms-keras-python-twilio)[[2]](https://www.geeksforgeeks.org/detecting-spam-emails-using-tensorflow-in-python/)and show high accuracy results. 
+
+### Final Results and Conclusion:
+
+### Conclusion:
+Nowadays, phishing websitesand spam messages increased rapidly and causing more damage to the users and organizations. It is becoming a biggest threat to people’s daily life and the networking environment. In these attacks, the intruder act as trustable party intention to access an essential information. Phishing website is a mock website that looks similar in appearance but different in destination. The unsuspected users post their data thinking that these websites come from trusted financial institutions. Hence, there is a need for efficient mechanism for the detection of phishing website. The spam masseage is message that recevied to user with harm links or content to damage or steals user credintials information. In our project, we developed machine and deep learning models that can be mainly used in determining the website’s as either phishing or legitimate and message either spam or ham by using the features extraction techniques from the URL and text messages. Here, in our project we applied Gradient Boost for URL and Sequential model for SMS and e-mail messages. During testing, it has been observed that the system has performed well and as expected.
+
+### Final Results:
+- For WebSite
+
+<img src='image/Website.png' width=400>
+
+- For Dashboard
+<img src='image/Dashboard.png' width=400>
 
 
-## About the Capstone Project ⁉️
-The main objective behind this project is to use what you learned during the Bootcamp including all libraries and skills that you have gained. Moreover, to evaluate learning outcomes by applying the main concepts using related technologies such as NumPy, pandas, matplotlib, seaborn, Plotly, and scikit-learn. We aim to apply the whole LifeCycle of Data Science and to collaborate as one team on the final project.
-> Remember: In data science, mindset then toolset.
-
-
-## Essential Requirements 📝
-In the capstone project, we will wrap up all skills that you learned in the Data Science LifeCycle in multiple phases as the following.
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204108273-def5e08f-d0ef-408f-9737-eb345b07495e.png" width="500" />
-</p>
-
-### Phase#1: Bussiness Problem 💡
-- You have to find an interesting question or problem and try to answer this question using data science techniques.
-
-### Phase#2: Dataset 💽
-- Pick a suitable dataset that helps you to find reasonable answers to your questions.
-- Choose a real dataset that needs to clean and preprocess.
-- The dataset should have at least 5000 records for Machine Learning Algorithms / 10,000 for Deep Learning Algorithms.
-- Make sure that you really understand your dataset.
-
-### Phase#3: Data Analysis and Preprocessing (Exploratory Data Analysis (EDA)) 🔎📊
-- Apply the essential EDA steps: head, shape, info, describe, and missing values.
-- Draw at least 10 interactive charts that give an overview of your data.
-- The charts should have proper formatting including XY-Axis labels and the main title.
-- Create an interactive dashboard using Plotly.
-
-### Phase#4: Data Modeling (Machine Learning) 🤖
-- Choose three to five proper ML Algorithms.
-- Show the reasons behind your choices of ML Algorithms - the reasons must be based on a trusted resource.
-- Use two splitting methods (train-test split and cross-validation split).
-
-### Phase#5: Model Evaluation (Model Tuning) 🎛
-- Report appropriate evaluation metrics for each model.
-- Display the used techniques for accuracy enhancement.
-- Create a chart that compares the final results of your selected models.
-
-### Phase#6: Model Deployment 🖥
-- Convert your model to .pkl format.
-- Use Django to deploy your model on a website.
-
-### Phase#7: Conclusion 🏁
-- Write a final conclusion and recommendations (your interpretation of the results).
-
-
-## Final Deliverables 📦
-Each team has to create a capstone project repository with the following files:
-1. Notebook file(.ipynb).
-2. Dataset file.
-3. README.md file with the following sections.
-    1. Project Title.
-    2. Team members with the role of each one.
-    3. Introduction about your project.
-    4. Dataset Overview.
-    5. Proposed Algorithms.
-    6. Final Results and conclusion.
-    
-> **Note:** Please, use the **proper Markdown format** for readability reasons 🤓🙏.
-
-### Project Deadline (5 Mar at 9:00 am)
 
