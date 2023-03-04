@@ -21,16 +21,28 @@ from plotly.subplots import make_subplots
 # In[2]:
 
 
-df_url = pd.read_csv('finalURL_version3.csv')
+df_url = pd.read_csv('age_and_end.csv')
 
 
 # In[3]:
 
 
-emailSMSData = pd.read_csv('arabicEnglishDashboar.csv')
+df_url['type']=df_url['result']
 
 
 # In[4]:
+
+
+df_url
+
+
+# In[5]:
+
+
+emailSMSData = pd.read_csv('arabicEnglishDashboar.csv')
+
+
+# In[6]:
 
 
 from dash import Dash, dcc, html, dash_table, Input, Output, callback
@@ -40,8 +52,8 @@ from dash_bootstrap_templates import ThemeChangerAIO, template_from_url
 import plotly.graph_objects as go
 
 
-features = ['?','=','.','%','//']
-names = {'?':'Question Mark (?)','=':'Equal sign(=)','.':'Dot (.)','%':'Precentage (%)','//':'Double Slash (//)'}
+features = ['?','=','.','@','//']
+names = {'?':'Question Mark (?)','=':'Equal sign(=)','.':'Dot (.)','@':'At (@)','//':'Double Slash (//)'}
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
 app = JupyterDash(external_stylesheets=[dbc.themes.DARKLY, dbc_css])
 header = html.H2("SECURE CLICK DASHBOARD", className="text-white p-2 mb-2 text-center", style={"background-color":"#73a1c7"})
@@ -55,9 +67,7 @@ typeDropdown = html.Div(
         dcc.Dropdown(
             options=[
             {'label':'benign','value':0},
-            {'label':'defacement','value':1},
-            {'label':'phishing','value':2},
-            {'label':'malware', 'value':3},
+            {'label':'malicious','value':1},
             {'label':'All', 'value':4} 
             ],
             value = 4,
@@ -106,9 +116,9 @@ alphaNumSlider = html.Div(
     [
         dbc.Label("Select Range: "),
         dcc.RangeSlider(
-            step=5,
+            step=2,
             id='count-slider',
-            value=[2,14], #defualt values
+            value=[0,7], #defualt values
             tooltip={"placement": "top", "always_visible": True},
             
             ),
@@ -254,38 +264,37 @@ app.layout = dbc.Container(
 def updateCharters(char,attackType):
     typeDict = {
         0: 'benign',
-        1: 'defacement',
-        2:'phishing',
-        3:'malware'    
+        1: 'malicious',   
     }
     
     if len(char) == 0:
-        char =  ['?','=','.','%','//']
+        char =  ['?','=','.','@','//']
     
     All = df_url.groupby('type').mean().reset_index()
     if attackType!=4:
         All = All[All['type']==attackType]
-        result = All[['?','=','.','%','//']]
+        result = All[['?','=','.','@','//']]
         result['type']=typeDict[attackType]
         fig = px.bar(data_frame=result,x='type',
                y=char,
                barmode='group',title='Average number of symbols for each type',
                      color_discrete_map={'?':'#90caf9','=':'#e7cbcb','.':'#567995',
-                                   '%':'#73a1c7','//':'#c47d7d'}, template='plotly_white').update_layout(title_x=0.5)
+                                   '@':'#73a1c7','//':'#c47d7d'}, template='plotly_white').update_layout(title_x=0.5)
     else:
-        result = All[['?','=','.','%','//']]
-        result['type']=['benign','defacement','phishing','malware']
+        result = All[['?','=','.','@','//']]
+        result['type']=['benign','malicious']
         fig = px.bar(data_frame=result,x='type',
                y=char, barmode='group',title='Average number of symbols for each type', 
                color_discrete_map={'?':'#90caf9','=':'#e7cbcb','.':'#567995',
-                                   '%':'#73a1c7','//':'#c47d7d'}, template='plotly_white').update_layout(title_x=0.5)
+                                   '@':'#73a1c7','//':'#c47d7d'}, template='plotly_white').update_layout(title_x=0.5)
     return fig
     
     
 @callback(
     [Output("barGraph2", "figure"),
     Output("count-slider", "max"),
-    Output("count-slider", "min")],
+    Output("count-slider", "min"),
+    ],
     
     [Input("dropDownCount","value"),
      Input("count-slider","value")]
@@ -295,20 +304,20 @@ def updateNumLetCount(alphaNum, countSlider):
     title=''
     if alphaNum == 1:  
         alphaNum = 'alphabetCount'
-        minVal = 33
-        maxVal = 70
+        minVal = 44
+        maxVal = 49
         title = 'The number of letters for each type'
     else:
         alphaNum = 'numberCount'
-        minVal = 2 
-        maxVal = 14
+        minVal = 0
+        maxVal = 7
         title = 'The number of digits for each type'
         
     AlphaNum = round(df_url[['type',alphaNum]].groupby('type').mean().reset_index(),0)
     AlphaNum = AlphaNum[((AlphaNum[alphaNum]>=countSlider[0]) & (AlphaNum[alphaNum]<=countSlider[1]))]
     letters = pd.DataFrame()
     letters[alphaNum] = AlphaNum[alphaNum]
-    letters['type']= AlphaNum['type'].map({0:'benign',1:'defacement',2:'phishing',3:'malware'})
+    letters['type']= AlphaNum['type'].map({0:'benign',1:'malicious'})
     
     fig2 = go.Figure()
     fig2.add_trace(go.Bar(
@@ -355,7 +364,7 @@ def updateThirdGraph(featureX, yesNo):
         legendY = 'Not Https'
         
     featuresData = pd.crosstab(df_url.type,df_url[xAxis])
-    featuresData['type']=['benign','defacement','phishing','malware']
+    featuresData['type']=['benign','malicious']
     featuresData.rename(columns={0:legendY,1:legendX},inplace=True)
     
     if len(yesNo) == 2:
