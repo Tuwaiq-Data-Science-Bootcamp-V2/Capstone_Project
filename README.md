@@ -26,13 +26,12 @@ As technology continues to grow, phishing techniques started to progress rapidly
 The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset)
 This dataset contains only the URLs and Type.
 
-**The Type is classified into:**
+**The Malicious is classified into:**
 | Type               | Describes                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 [Defacement](https://www.imperva.com/learn/application-security/website-defacement-attack/)|Web defacement is an attack in which malicious parties penetrate a website and replace content on the site with their own messages. The messages can convey a political or religious message, profanity or other inappropriate content that would embarrass website owners, or a notice that the website has been hacked by a specific hacker group.
 [Phishing](https://www.barracuda.com/support/glossary/url-phishing)|Cybercriminals use phishing URLs to try to obtain sensitive information for malicious use, such as usernames, passwords, or banking details. They send phishing emails to direct their victims to enter sensitive information on a fake website that looks like a legitimate website.
 [Malware](https://gatefy.com/blog/what-malicious-url/)|Malicious URL is a link created with the purpose of promoting scams, attacks, and frauds. By clicking on an infected URL, you can download ransomware, virus, trojan, or any other type of malware that will compromise your machine or even your network, in the case of a compan
-Benign|Safe or harmless websites.
 
 For the URL part, features extraction has been done including URL length, URL digit count, URL letter count, URL Special character count ... etc.
 
