@@ -25,7 +25,7 @@ The model architecture with more details:<br>
 
 ## Model performance
 ### Sentiment classifier
-|class|Precision|Recall|F1-score|
+|Class|Precision|Recall|F1-score|
 |---|---|---|---|
 |Positive|0.83|0.71|0.77|
 |Neutral|0.78|0.77|0.78|
@@ -33,22 +33,22 @@ The model architecture with more details:<br>
 |AVG|0.80|0.79|0.79|
 
 ### Speech act classifier
-|class|Precision|Recall|F1-score|
+|Class|Precision|Recall|F1-score|
 |---|---|---|---|
-|expression|0.95|0.91|0.93|
-|assertion|0.88|0.93|0.90|
+|Expression|0.95|0.91|0.93|
+|Assertion|0.88|0.93|0.90|
 |AVG|0.92|0.92|0.92|
 
 ### Sarcasm classifier
-|class|Precision|Recall|F1-score|
+|Class|Precision|Recall|F1-score|
 |---|---|---|---|
-|not sarcastic|0.94|0.86|0.90|
-|sarcastic|0.72|0.86|0.79|
+|Not sarcastic|0.94|0.86|0.90|
+|Sarcastic|0.72|0.86|0.79|
 |AVG|0.87|0.86|0.86|
 
 ## Team members
 |Name|Role|
 |---|---|
-|faris adel alahmadi|ML developer|
-|saed alshahrani|Data analysis|
-|moath almoghirah|UX/UI developer|
+|Faris adel alahmadi|ML developer|
+|Saed alshahrani|Data analysis|
+|Moath almoghirah|UX/UI developer|
