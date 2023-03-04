@@ -46,7 +46,7 @@ We used Machine Learning technique.
 | Model               | Accuracy                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 Logistic regression |97%
-Gradient Boosting	|97%
+Gradient Boosting	|98%
 Decision Tree	| 97%
 Random Forest|	98%
 
