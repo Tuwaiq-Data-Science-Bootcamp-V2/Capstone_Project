@@ -1,69 +1,54 @@
-# Capstone Project 🎓🥳
+# OCTOPUS
+OCTOPUS is an AI services project, that provide AI use cases as REST API<br>
+the services we have now:<br>
+1. Language analysis: An AI use case that takes text as input and predict sentiment, speech act and sarcasm.
 
+# Why OCTOPUS
+Most of AI companies and startups provides AI services in a form of (get-data > train-data > tuning > deploy) but in octopus we provide AI sevices as REST API in form of (subscribe > use AI use case) no need to get customer data and make the customer waiting for training and tuning.
 
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204110091-be66e56a-629b-417b-88b7-8df7f29e5fd0.png" width="700" />
-</p>
+# Language analysis project
+## project overview
+The project consist of two phases:<br>
+1. Simi supervised phase : In this phase we will create the data by making 2 models, one for sarcasm and one for sppech act.<br>
+2. Final model phase : In this phase we will train the model on the data that we produce in the first phase.
+<img src="project.png"><br>
+## Data set
+First dataset link: [HERE](https://aclanthology.org/2020.osact-1.5.pdf)<br>
+Second dataset link: [HERE](http://lrec-conf.org/workshops/lrec2018/W30/pdf/22_W30.pdf)<br>
+## AI Model
+The algorithem we choose is MARBERT which is a BERT model trained on huge arabic corpus.<br>
+The github link for MARBERT : [HERE](https://github.com/UBC-NLP/marbert)<br>
+The model architecture:<br>
+<img src="project2.png"><br>
+The model architecture with more details:<br>
+<img src="project3.png"><br>
 
+## Model performance
+### Sentiment classifier
+|Class|Precision|Recall|F1-score|
+|---|---|---|---|
+|Positive|0.83|0.71|0.77|
+|Neutral|0.78|0.77|0.78|
+|Negative|0.78|0.90|0.83|
+|AVG|0.80|0.79|0.79|
 
-## About the Capstone Project ⁉️
-The main objective behind this project is to use what you learned during the Bootcamp including all libraries and skills that you have gained. Moreover, to evaluate learning outcomes by applying the main concepts using related technologies such as NumPy, pandas, matplotlib, seaborn, Plotly, and scikit-learn. We aim to apply the whole LifeCycle of Data Science and to collaborate as one team on the final project.
-> Remember: In data science, mindset then toolset.
+### Speech act classifier
+|Class|Precision|Recall|F1-score|
+|---|---|---|---|
+|Expression|0.95|0.91|0.93|
+|Assertion|0.88|0.93|0.90|
+|AVG|0.92|0.92|0.92|
 
+### Sarcasm classifier
+|Class|Precision|Recall|F1-score|
+|---|---|---|---|
+|Not sarcastic|0.94|0.86|0.90|
+|Sarcastic|0.72|0.86|0.79|
+|AVG|0.87|0.86|0.86|
 
-## Essential Requirements 📝
-In the capstone project, we will wrap up all skills that you learned in the Data Science LifeCycle in multiple phases as the following.
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204108273-def5e08f-d0ef-408f-9737-eb345b07495e.png" width="500" />
-</p>
-
-### Phase#1: Bussiness Problem 💡
-- You have to find an interesting question or problem and try to answer this question using data science techniques.
-
-### Phase#2: Dataset 💽
-- Pick a suitable dataset that helps you to find reasonable answers to your questions.
-- Choose a real dataset that needs to clean and preprocess.
-- The dataset should have at least 5000 records for Machine Learning Algorithms / 10,000 for Deep Learning Algorithms.
-- Make sure that you really understand your dataset.
-
-### Phase#3: Data Analysis and Preprocessing (Exploratory Data Analysis (EDA)) 🔎📊
-- Apply the essential EDA steps: head, shape, info, describe, and missing values.
-- Draw at least 10 interactive charts that give an overview of your data.
-- The charts should have proper formatting including XY-Axis labels and the main title.
-- Create an interactive dashboard using Plotly.
-
-### Phase#4: Data Modeling (Machine Learning) 🤖
-- Choose three to five proper ML Algorithms.
-- Show the reasons behind your choices of ML Algorithms - the reasons must be based on a trusted resource.
-- Use two splitting methods (train-test split and cross-validation split).
-
-### Phase#5: Model Evaluation (Model Tuning) 🎛
-- Report appropriate evaluation metrics for each model.
-- Display the used techniques for accuracy enhancement.
-- Create a chart that compares the final results of your selected models.
-
-### Phase#6: Model Deployment 🖥
-- Convert your model to .pkl format.
-- Use Django to deploy your model on a website.
-
-### Phase#7: Conclusion 🏁
-- Write a final conclusion and recommendations (your interpretation of the results).
-
-
-## Final Deliverables 📦
-Each team has to create a capstone project repository with the following files:
-1. Notebook file(.ipynb).
-2. Dataset file.
-3. README.md file with the following sections.
-    1. Project Title.
-    2. Team members with the role of each one.
-    3. Introduction about your project.
-    4. Dataset Overview.
-    5. Proposed Algorithms.
-    6. Final Results and conclusion.
-    
-> **Note:** Please, use the **proper Markdown format** for readability reasons 🤓🙏.
-
+## Team members
+|Name|Role|
+|---|---|
+|Faris adel alahmadi|ML developer|
+|Saed alshahrani|Data analysis|
+|Moath almoghirah|UX/UI developer|
