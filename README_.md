@@ -18,5 +18,7 @@ Second dataset link: [HERE](http://lrec-conf.org/workshops/lrec2018/W30/pdf/22_W
 ## AI Model
 The algorithem we choose is MARBERT which is a BERT model trained on huge arabic corpus.<br>
 The github link for MARBERT : [HERE](https://github.com/UBC-NLP/marbert)<br>
-the model architecture:<br>
+The model architecture:<br>
 <img src="project2.png"><br>
+The model architecture with more details:<br>
+<img src="project3.png"><br>
