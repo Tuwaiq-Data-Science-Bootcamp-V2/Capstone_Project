@@ -73,7 +73,7 @@ Nowadays, phishing websitesand spam messages increased rapidly and causing more 
 <img src='image/Website.png' width=400>
 
 - For Dashboard
-<img src='image/dashboard-dark.PNG' width=400>
+<img src='image/Dashboard.png' width=400>
 
 
 
