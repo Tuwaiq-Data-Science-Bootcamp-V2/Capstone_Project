@@ -42,6 +42,9 @@ This dataset contains only the Text and Type including(Ham and Spam).
 ### Proposed Algorithms:
 #### &nbsp;&nbsp;&nbsp; - **For URL**
 We used Machine Learning technique.
+- Flow-chart of Phishing detection method <br>
+<img src='image/Flow-chart of Phishing detection method.png' width=600>
+
 | Model               | Accuracy                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 Logistic regression |97%
