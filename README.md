@@ -37,7 +37,7 @@ VGG16 is object detection and classification algorithm which is able to classify
 | ----------- | ----------- |
 | Hijab model | 96% |
 | Traditional Saudi dress model | 92.7% |
-| Similarity model | 91.3% |
+| Face similarity model | 91.3% |
 
 Based on the results of the accuracy, we can say that this project can automate the process of verifying the photos of renewing the national identity photo
 
