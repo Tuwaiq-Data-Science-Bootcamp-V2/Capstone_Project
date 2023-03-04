@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+<li><i class="far fa-envelope"></i> Rahaf Aladhyani</li>
+-->
+<html lang="">
+<head>
+<title>Nocobot</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'css/layout.css'%}" rel="stylesheet" type="text/css" media="all">
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+  <style>
+     .my-element {
+       background-image: url("{% static 'images/Cyber attack-amico 6.png'%}");
+       }
+       .btn, .btn.inverse:hover{color:#FFFFFF; background-color:rgba(196,125,125,0.73); border-color:#FFFFFF;text-transform:capitalize}
+       .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;text-transform:capitalize}
+      .imgover:hover::before{background-color:rgba(196,125,125,0.0);/* #B946AD */}
+      .imgover, .imgover:hover::after{color:rgba(255, 255, 255, 0);}
+      .container{padding:0px 0
+      }
+      #mainav .active a{color:rgba(196,125,125,0.73);}
+       #mainav a:hover{color:rgba(196,125,125,0.73);}
+
+       #mainav li:hover > a{color:rgba(196,125,125,0.73);}
+      #mainav li li a, #mainav .active li a{background-color:rgba(196,125,125,0.73);border-color:rgba(196,125,125,0.73)}
+       #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:rgba(196, 126, 126, 0.57);}
+  </style>
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear" style="padding: 0px 0px;text-align: right;">
+    <nav id="mainav" >
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li style="padding-right: 50%;" ><a href="/" style="padding: 0 0;" >English</a></li>
+
+          <li><a href="AboutUsAr">معلومات عنا</a></li>
+          <li><a href="http://127.0.0.1:8011/">احصائيات البيانات</a></li>
+                    <li><a class="drop" href="#">تحقق من الخيار</a>
+            <ul>
+              <li><a href="URLAr">رابط الموقع</a></li>
+              <li><a href="SMSEMAILAr">الرسائل القصيرة</a></li>
+              <li><a href="SMSEMAILAr">البريد إلإلكتروني</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href=" ">الرئيسية</a></li>
+          <li><a href=" " style="padding: 0 0;" > <img src="{% static 'images/5.png'%}" alt="logo"> </a></li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+  </div>
+</div>
+
+<!-- Top Background Image Wrapper -->
+<div class="bgded my-element ">
+
+  <div class="overlay">
+    <div id="pageintro" class="hoc clear" style="padding: 160px 0 350px;">
+      <article>
+        <br>
+        <br>
+        <h3 class="heading">Secure Click</h3>
+        <p>نحن نصطاد ما يصطادك</p>
+        <!--<footer><a  class="btn" href="http://127.0.0.1:8010/">Dashboard</a></footer>-->
+        <br>
+        <br>
+      </article>
+    </div>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80" style="margin-bottom: 1%;">
+        <li class="one_third first">
+          <figure><a class="imgover" href="URLAr"><img src="{% static 'images/www-amico.png'%}" alt=""></a>
+            <figcaption>
+              <h6 class="heading"> رابط الموقع</h6>
+              <div>
+                <p>للتحقق من رابط الموقع</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="SMSEMAILAr"><img src="{% static 'images/New_message-amico.png'%}" alt=""></a>
+            <figcaption>
+              <h6 class="heading">الرسائل القصيرة</h6>
+              <div>
+                <p>للتحقق من الرسائل القصيرة</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="SMSEMAILAr"><img src="{% static 'images/New_message-bro.png'%}" alt=""></a>
+            <figcaption>
+              <h6 class="heading">البريد إلإلكتروني</h6>
+              <div>
+                 <p>للتحقق من البريد إلإلكتروني</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<!-- JAVASCRIPTS -->
+<script src="{% static 'js/jquery.min.js'%}"></script>
+<script src="{% static 'js/jjquery.backtotop.js'%}"></script>
+<script src="{% static 'js/jjquery.mobilemenu.js'%}"></script>
+</body>
+</html>
