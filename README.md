@@ -1,6 +1,5 @@
 
-#  <img src="https://user-images.githubusercontent.com/64935590/222929027-1c4d7267-7475-49b8-aace-079e33a2ded0.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="100" height="50" /> Gadid project
-
+#  <img src="https://user-images.githubusercontent.com/64935590/222929027-1c4d7267-7475-49b8-aace-079e33a2ded0.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" style="margin: 0px 0px -12px 0px;  display: inline;" width="100" height="50" /> <span style="display: inline; ">Gadid project</span>
 
 ### Team members
 
