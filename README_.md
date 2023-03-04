@@ -14,4 +14,9 @@ The project consist of two phases:<br>
 <img src="project.png"><br>
 ## Data set
 First dataset link: [HERE](https://aclanthology.org/2020.osact-1.5.pdf)<br>
-Second dataset link: [HERE](http://lrec-conf.org/workshops/lrec2018/W30/pdf/22_W30.pdf)
+Second dataset link: [HERE](http://lrec-conf.org/workshops/lrec2018/W30/pdf/22_W30.pdf)<br>
+## AI Model
+The algorithem we choose is MARBERT which is a BERT model trained on huge arabic corpus.<br>
+The github link for MARBERT : [HERE](https://github.com/UBC-NLP/marbert)<br>
+the model architecture:<br>
+<img src="project2.png"><br>
