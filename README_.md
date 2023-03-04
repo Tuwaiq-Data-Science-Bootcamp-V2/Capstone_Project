@@ -9,9 +9,9 @@ Most of AI companies and startups provides AI services in a form of (get-data > 
 # Language analysis project
 ## project overview
 The project consist of two phases:<br>
-1. Simi supervised phase : In this phase we will create the data by making 2 models, one for sarcasm and one for sppech act.
+1. Simi supervised phase : In this phase we will create the data by making 2 models, one for sarcasm and one for sppech act.<br>
 2. Final model phase : In this phase we will train the model on the data that we produce in the first phase.
 <img src="project.png">
 ## Data set
-First dataset link: [HERE](https://aclanthology.org/2020.osact-1.5.pdf)
-Second dataset link: [HERE](http://lrec-conf.org/workshops/lrec2018/W30/pdf/22_W30.pdf)
+First dataset link: [HERE] (https://aclanthology.org/2020.osact-1.5.pdf)<br>
+Second dataset link: [HERE] (http://lrec-conf.org/workshops/lrec2018/W30/pdf/22_W30.pdf)
