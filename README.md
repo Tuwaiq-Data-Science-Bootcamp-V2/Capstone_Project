@@ -23,7 +23,7 @@ As technology continues to grow, phishing techniques started to progress rapidly
 ### Dataset Overview:
 #### &nbsp;&nbsp;&nbsp; - **For URL**
 
-The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset)
+The dataset is available through the [Kaggle.](https://www.kaggle.com/datasets/siddharthkumar25/malicious-and-benign-urls?resource=download)
 This dataset contains only the URLs and Type.
 
 **The Malicious is classified into:**
