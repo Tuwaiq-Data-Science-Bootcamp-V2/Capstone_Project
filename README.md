@@ -63,9 +63,17 @@ Sequential Model |	98%
 - After multiple research, we found two articles that used sequential model [[1]](https://www.twilio.com/blog/spam-deep-learning-detection-sms-keras-python-twilio)[[2]](https://www.geeksforgeeks.org/detecting-spam-emails-using-tensorflow-in-python/)and show high accuracy results. 
 
 ### Final Results and Conclusion:
+
+### Conclusion:
+Nowadays, phishing websitesand spam messages increased rapidly and causing more damage to the users and organizations. It is becoming a biggest threat to people’s daily life and the networking environment. In these attacks, the intruder act as trustable party intention to access an essential information. Phishing website is a mock website that looks similar in appearance but different in destination. The unsuspected users post their data thinking that these websites come from trusted financial institutions. Hence, there is a need for efficient mechanism for the detection of phishing website. The spam masseage is message that recevied to user with harm links or content to damage or steals user credintials information. In our project, we developed machine and deep learning models that can be mainly used in determining the website’s as either phishing or legitimate and message either spam or ham by using the features extraction techniques from the URL and text messages. Here, in our project we applied the algorithms like Gradient Boost, Random Forest, logistic regression and Sequential model. During testing, it has been observed that the system has performed well and as expected.
+
+### Final Results:
 - For WebSite
 
 <img src='image/Website.png' width=400>
 
 - For Dashboard
 <img src='image/dashboard-dark.PNG' width=400>
+
+
+
