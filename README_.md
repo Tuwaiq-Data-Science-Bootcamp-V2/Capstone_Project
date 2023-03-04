@@ -24,25 +24,25 @@ The model architecture with more details:<br>
 <img src="project3.png"><br>
 
 ## Model performance
-Sentiment classifier<br>
+### Sentiment classifier
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
 |Positive|0.83|0.71|0.77|
 |Neutral|0.78|0.77|0.78|
 |Negative|0.78|0.90|0.83|
 |AVG|0.80|0.79|0.79|
-<br>
-Speech act classifier<br>
+
+### Speech act classifier
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
 |Positive|0.95|0.91|0.93|
 |Neutral|0.88|0.93|0.90|
 |AVG|0.92|0.92|0.92|
-<br>
-Sarcasm classifier<br>
+
+### Sarcasm classifier
 |class|Precision|Recall|F1-score|
 |---|---|---|---|
 |Positive|0.94|0.86|0.90|
 |Neutral|0.72|0.86|0.79|
-|AVG|0.87|0.86|0.86|<br>
+|AVG|0.87|0.86|0.86|
 
