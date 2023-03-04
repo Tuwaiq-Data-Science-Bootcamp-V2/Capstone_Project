@@ -45,10 +45,10 @@ This dataset contains only the Text and Type including(Ham and Spam).
 We used Machine Learning technique.
 | Model               | Accuracy                                                                                                                                                              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-Logistic regression |	
-Gradient Boosting	|
-Decision Tree	|
-Random Forest|	
+Logistic regression |97%
+Gradient Boosting	|97%
+Decision Tree	| 97%
+Random Forest|	98%
 
 **Reason for choosing the models:**
 - After multiple research, we found two reaserch papers that used Decesion Tree, Random Forest and Logistic Regression and show high accuracy results. [[1]](https://arxiv.org/pdf/2205.05121.pdf)[[2]](https://www.researchgate.net/profile/Rishikesh-Mahajan/publication/328541785_Phishing_Website_Detection_using_Machine_Learning_Algorithms/links/5d0397fd92851c9004394af4/Phishing-Website-Detection-using-Machine-Learning-Algorithms.pdf)
