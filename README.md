@@ -7,7 +7,7 @@
 | ----------- | ----------- |
 | Shatha alyousef | EDA, Encoding , Random Forest algorithm, classification report, README File Arrangement |
 | Alaa Qadri  | Face similarity model, Eyeglass Detection model, background color identification model, Deployment by Django |
-|Amjad| |
+|Amjad| | Idea, men model, Data collection, Data annotation, EDA, VGG16, loss function 
 
 ### Introduction
 
@@ -26,7 +26,6 @@ For men clothes classification we collected around 1500 images with Saudi tradit
 ### Proposed Algorithms
 
 - vgg16 algorithm
-
 VGG16 is object detection and classification algorithm which is able to classify 1000 images of 1000 different categories with 92.7% accuracy. It is one of the popular algorithms for image classification and is easy to use with transfer learning
 
 - LFW (Labeled Faces in the Wild) DataSet 
