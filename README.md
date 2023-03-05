@@ -22,7 +22,7 @@ https://od.data.gov.sa/Data/ar/dataset/cases
 
 ## Data Visualization (Dashboard)
  <p align="center">
-<img src="dashbardtableau.png" width="700" height="400">
+<img src="dashbardtableau.png" width="600" height="300">
 </p>
 
 
@@ -32,27 +32,23 @@ https://od.data.gov.sa/Data/ar/dataset/cases
 ### Algorithms used 
 - import xgboost
 - import GradientBoostingRegressor
-- import DecisionTreeRegressor
--
+- DecisionTreeRegressor
+- Linear Regression
 
 
-| Model | Accuracy |
-| ----------- | ----------- |
-|  Decision Tree Regressor |99%|
-| xgboost |%|
-| Gradient Boosting Regressor |%|
-| Linear Regression   |%|
+## Final Results.
+This is the final result that our project can choose for the user (ابدأ), then choose the country, city and his case, then select the prediction and it will display the number of court sessions and the duration of the case by month
+
+ <p align="center">
+<img src="web.jpg" width="600" height="300">
+</p>
+
+ <p align="center">
+<img src="web2.jpg" width="600" height="300">
+</p>
 
 
-
-### Final Results.
-
-
-
-
-### Conclusion.
-
-### Team Work.
+## Team Work.
 
 | Name | Role |
 | ----------- | ----------- |
