@@ -6,8 +6,8 @@
 | Team members   | Role |
 | ----------- | ----------- |
 | Shatha alyousef | EDA, Encoding , Random Forest algorithm, classification report, README File Arrangement |
-| alaa  | Logistics Regression, KNN, 2 Visualization, Final evaluation report, Fromat and Styling |
-|amjad| |
+| Alaa Qadri  | Face similarity model, Eyeglass Detection model, background color identification model, Deployment by Django |
+|Amjad| |
 
 ### Introduction
 
@@ -29,7 +29,18 @@ For men clothes classification we collected around 1500 images with Saudi tradit
 
 VGG16 is object detection and classification algorithm which is able to classify 1000 images of 1000 different categories with 92.7% accuracy. It is one of the popular algorithms for image classification and is easy to use with transfer learning
 
--
+- LFW (Labeled Faces in the Wild) DataSet 
+It is a collection of pictures of men and women faces, with approximatly 13k pictures. 
+
+- Custom DataSet
+It is a web scrapping and manual selection for arab persons, we collected around 1.5k men and women faces, 30 images for each person.
+
+- MeGlass Dataset
+It is a collection of pictures of person who wear glasses and person without, it contains approximatly 33k with glasses and 14k without them.
+
+- Celeba DataSet
+It is a collection of pictures of person who wear glasses and person without, it contains approximatly 13k with glasses and 189k without them.
+
 
 ### Final Results and conclusion
 
@@ -37,7 +48,8 @@ VGG16 is object detection and classification algorithm which is able to classify
 | ----------- | ----------- |
 | Hijab model | 96% |
 | Traditional Saudi dress model | 92.7% |
-| Face similarity model | 91.3% |
+| Face similarity model | 97.3% |
+| Eyeglass detection model | 99.0% |
 
 Based on the results of the accuracy, we can say that this project can automate the process of verifying the photos of renewing the national identity photo
 
