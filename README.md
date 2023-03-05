@@ -5,7 +5,7 @@
 
 | Team members   | Role |
 | ----------- | ----------- |
-| Shatha alyousef | EDA, Encoding , Random Forest algorithm, classification report, README File Arrangement |
+| Shatha alyousef | Hijab model, EDA , Data collection, README File Arrangement |
 | Alaa Qadri  | Face similarity model, Eyeglass Detection model, background color identification model, Deployment by Django |
 | Amjad Albugami  | Idea, men model, Data collection, Data annotation, EDA, VGG16, loss function |
 
@@ -23,11 +23,6 @@ It is a collection of pictures of veiled girls, with approximately 5,000 picture
 
 For men clothes classification we collected around 1500 images with Saudi tradition clothes and without.
 
-### Proposed Algorithms
-
-- vgg16 algorithm
-VGG16 is object detection and classification algorithm which is able to classify 1000 images of 1000 different categories with 92.7% accuracy. It is one of the popular algorithms for image classification and is easy to use with transfer learning
-
 - LFW (Labeled Faces in the Wild) DataSet 
 It is a collection of pictures of men and women faces, with approximatly 13k pictures. 
 
@@ -40,6 +35,10 @@ It is a collection of pictures of person who wear glasses and person without, it
 - Celeba DataSet
 It is a collection of pictures of person who wear glasses and person without, it contains approximatly 13k with glasses and 189k without them.
 
+### Proposed Algorithms
+
+- vgg16 algorithm
+VGG16 is object detection and classification algorithm which is able to classify 1000 images of 1000 different categories with 92.7% accuracy. It is one of the popular algorithms for image classification and is easy to use with transfer learning
 
 ### Final Results and conclusion
 
