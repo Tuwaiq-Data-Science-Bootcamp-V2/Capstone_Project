@@ -15,14 +15,13 @@ The dataset contains the number of columns: 10 and the number of rows: 440335
 <img src="dataset1.png" width="600" height="150">
 </p>
 
-- data source: البيانات المتفوحة
-البيانات المفتوحة
+- data source: البيانات المفتوحة
 
 https://od.data.gov.sa/Data/ar/dataset/cases
 
 ## Data Visualization (Dashboard)
  <p align="center">
-<img src="dashbardtableau.png" width="600" height="300">
+<img src="dashbardtableau.png" width="600" height="350">
 </p>
 
 
