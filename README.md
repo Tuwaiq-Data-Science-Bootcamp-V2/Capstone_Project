@@ -7,7 +7,7 @@
 | ----------- | ----------- |
 | Shatha alyousef | EDA, Encoding , Random Forest algorithm, classification report, README File Arrangement |
 | Alaa Qadri  | Face similarity model, Eyeglass Detection model, background color identification model, Deployment by Django |
-|Amjad| | Idea, men model, Data collection, Data annotation, EDA, VGG16, loss function 
+| Amjad Albugami  | Idea, men model, Data collection, Data annotation, EDA, VGG16, loss function |
 
 ### Introduction
 
