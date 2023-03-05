@@ -1,71 +1,62 @@
-# Capstone Project 🎓🥳
+
+ <p align="center">
+<img src="download.jfif" width="300" height="300">
+</p>
+ 
+ 
+### The main goal of this project is to create a service that can predict the number of court sessions and Case duration by month for people who want to file a court case. It also, suggests licensed attorneys in the user's city.
 
 
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204110091-be66e56a-629b-417b-88b7-8df7f29e5fd0.png" width="700" />
+## Dataset Overview
+This dataset is a collection of cases and applications received by the competent courts. As shown in the picture, the data set contains a lot of information, including all regions and cities of the Kingdom, and we have three types of cases: public, personal, and penal cases.
+The dataset contains the number of columns: 10 and the number of rows: 440335
+ 
+  <p align="center">
+<img src="dataset1.png" width="600" height="150">
+</p>
+
+- data source: البيانات المفتوحة
+
+https://od.data.gov.sa/Data/ar/dataset/cases
+
+## Data Visualization (Dashboard)
+ <p align="center">
+<img src="dashbardtableau.png" width="600" height="350">
 </p>
 
 
-## About the Capstone Project ⁉️
-The main objective behind this project is to use what you learned during the Bootcamp including all libraries and skills that you have gained. Moreover, to evaluate learning outcomes by applying the main concepts using related technologies such as NumPy, pandas, matplotlib, seaborn, Plotly, and scikit-learn. We aim to apply the whole LifeCycle of Data Science and to collaborate as one team on the final project.
-> Remember: In data science, mindset then toolset.
+
+## Proposed Algorithms.
+### We used machine learning ML for prediction  number of court sessions and Case duration by month
+### Algorithms used 
+- import xgboost
+- import GradientBoostingRegressor
+- DecisionTreeRegressor
+- Linear Regression
 
 
-## Essential Requirements 📝
-In the capstone project, we will wrap up all skills that you learned in the Data Science LifeCycle in multiple phases as the following.
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204108273-def5e08f-d0ef-408f-9737-eb345b07495e.png" width="500" />
+## Final Results.
+This is the final result that our project can choose for the user (ابدأ), then choose the country, city and his case, then select the prediction and it will display the number of court sessions and the duration of the case by month
+
+ <p align="center">
+<img src="web1.jpg" width="600" height="300">
 </p>
 
-### Phase#1: Bussiness Problem 💡
-- You have to find an interesting question or problem and try to answer this question using data science techniques.
-
-### Phase#2: Dataset 💽
-- Pick a suitable dataset that helps you to find reasonable answers to your questions.
-- Choose a real dataset that needs to clean and preprocess.
-- The dataset should have at least 5000 records for Machine Learning Algorithms / 10,000 for Deep Learning Algorithms.
-- Make sure that you really understand your dataset.
-
-### Phase#3: Data Analysis and Preprocessing (Exploratory Data Analysis (EDA)) 🔎📊
-- Apply the essential EDA steps: head, shape, info, describe, and missing values.
-- Draw at least 10 interactive charts that give an overview of your data.
-- The charts should have proper formatting including XY-Axis labels and the main title.
-- Create an interactive dashboard using Plotly.
-
-### Phase#4: Data Modeling (Machine Learning) 🤖
-- Choose three to five proper ML Algorithms.
-- Show the reasons behind your choices of ML Algorithms - the reasons must be based on a trusted resource.
-- Use two splitting methods (train-test split and cross-validation split).
-
-### Phase#5: Model Evaluation (Model Tuning) 🎛
-- Report appropriate evaluation metrics for each model.
-- Display the used techniques for accuracy enhancement.
-- Create a chart that compares the final results of your selected models.
-
-### Phase#6: Model Deployment 🖥
-- Convert your model to .pkl format.
-- Use Django to deploy your model on a website.
-
-### Phase#7: Conclusion 🏁
-- Write a final conclusion and recommendations (your interpretation of the results).
+ <p align="center">
+<img src="web2.jpg" width="600" height="300">
+</p>
+ <p align="center">
+<img src="web3.jpg" width="600" height="300">
+</p>
 
 
-## Final Deliverables 📦
-Each team has to create a capstone project repository with the following files:
-1. Notebook file(.ipynb).
-2. Dataset file.
-3. README.md file with the following sections.
-    1. Project Title.
-    2. Team members with the role of each one.
-    3. Introduction about your project.
-    4. Dataset Overview.
-    5. Proposed Algorithms.
-    6. Final Results and conclusion.
-    
-> **Note:** Please, use the **proper Markdown format** for readability reasons 🤓🙏.
+## Team Work.
 
-### Project Deadline (5 Mar at 9:00 am)
+| Name | Role |
+| ----------- | ----------- |
+| Lama Mugren |I came up with the idea., Found the relative data.,did an EDA exploratory data analysis.,Data cleaning and wrangling., Data analysis.,did feature engineering.,Found merged and added new latitude and longitude data to the main data frame in order to facilitate a map chart off Saudi Arabia.,Made six insightful charts., Did data pre-processing for machine learning.,Built a more than 9 single machine learning models., Built bagging or stacking models, which are more than one model combined to improve accuracy.,fine-tune the model.,Made the pickle file for each model and the main model that we are using.,Prepared a number of excel files that contained each value that corresponds to the encoded values made by the Labelencoder() to facilitate the last step of making a Web app. |
+| Reef Alashli | Data Pre-Processing , Made five insightful Charts , Made Dashboard by Tableau |
+| Manar Alabdulkarim | Web scraping for lawyers data, Develop HTML pages, Django Deployment  |
+
+
 
