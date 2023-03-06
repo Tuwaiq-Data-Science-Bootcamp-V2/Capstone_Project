@@ -1,69 +1,138 @@
-# Capstone Project 🎓🥳
+# EyeInsight  
+
+<img src= "assets/logo.png">
+
+### What is EyeInsight?
+
+**EYEINSIGHT** is an AI-powered skin diagnosis tool designed to help individuals take control of their skin's health. By using advanced computer vision technology, EyeInsight can accurately detect and diagnose various skin cancers and diseases, including melanoma, basal cell carcinoma, and squamous cell carcinoma.
+
+Using EyeInsight is easy - simply take a picture of the affected area and let the app do the rest. The AI algorithm will analyze the image and provide an instant diagnosis, giving you peace of mind and allowing you to take action quickly if necessary.
+
+With EyeInsight, you can detect skin concerns early on and get the treatment you need to maintain healthy skin. Whether you're at home or on the go, EyeInsight empowers you to prioritize your skin's safety and take charge of your overall wellness.
+
+## Team Members 
+
+|Name|Role|
+|---|---|
+|Ali Almuhaysin|ML and Web Development & Reporting|
+|Khalid AlSumali|Data analysis and Visualization & Content Anaysis|
+|Mohamed Alshaikh|ML Development & Reporting|
 
 
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204110091-be66e56a-629b-417b-88b7-8df7f29e5fd0.png" width="700" />
-</p>
+## Dataset Overview
+
+available and accessed [HERE](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
+
+### Original Data Source
+- Original Challenge: <https://challenge2018.isic-archive.com>
+- <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T>
+
+[1] Noel Codella, Veronica Rotemberg, Philipp Tschandl, M. Emre Celebi, Stephen Dusza, David Gutman, Brian Helba, Aadi Kalloo, Konstantinos Liopyris, Michael Marchetti, Harald Kittler, Allan Halpern: “Skin Lesion Analysis Toward Melanoma Detection 2018: A Challenge Hosted by the International Skin Imaging Collaboration (ISIC)”, 2018; <https://arxiv.org/abs/1902.03368>
+
+[2] Tschandl, P., Rosendahl, C. & Kittler, H. The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions. Sci. Data 5, 180161 doi:10.1038/sdata.2018.161 (2018).
+
+###  Overview
+
+#### General:
+| Name | Details |
+|---|---|
+| Number of Images | 10,015 | 
+| Number of Classes (Type of Cancer) | 7 |
+| Avaiable Metadata |  Type of Cancer,  Confirmation method, age, sex, localization |
+
+#### Classes:
+| Name | data-shorcut |
+|---|---|
+|Actinic keratoses and intraepithelial carcinoma Bowen's disease| akiec|
+|basal cell carcinoma| bcc|
+|benign keratosis-like lesions (solar lentigines / seborrheic keratoses and lichen-planus like keratoses)| bkl|
+|dermatofibroma| df|
+|melanoma| mel|
+|melanocytic nevi| nv|
+|vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage) | vasc|
+
+#### Localization Type:
+More than 50% of lesions are confirmed through histopathology (histo), the ground truth for the rest of the cases is either follow-up examination (follow_up), expert consensus (consensus), or confirmation by in-vivo confocal microscopy (confocal).
+
+#### Sample images from the dataset:
+<img src= "assets/images_data.png">
+
+## Algorithm
+
+### 1. Custom Algorithm
+
+#### architecture
+<img src= "assets/HAM_Model.png">
+
+#### Configurations
+| Name | Details |
+|---|---|
+| Train data size | 37548 |
+| Test Data Size | 9387 |
+| Training Batch size | 128 |
+| Number of Epochs | 24 |
+| Optimizer  | adam |
+
+Total Trainable params: 182,663.
+
+#### Performance
+
+|                Classs                                 |precision|    recall|  f1-score|   support|
+|---|---|---|---|---|
+|                                melanocytic nevi|       0.98|      1.00|      0.99|      1359|
+|                                        melanoma|       0.95|      1.00|      0.97|      1318|
+|                   benign keratosis-like lesions|       0.89|      0.97|      0.93|      1262|
+|                            basal cell carcinoma|       1.00|      0.99|      0.99|      1351|
+|              pyogenic granulomas and hemorrhage|       0.91|      0.79|      0.84|      1374|
+|Actinic keratoses and intraepithelial carcinomae|       1.00|      0.99|      0.99|      1358|
+|                                  dermatofibroma|       0.93|      0.92|      0.92|      1365|
+||
+|                                        accuracy|           |          |      0.95|      9387|
+|                                       macro avg|       0.95|      0.95|      0.95|      9387|
+|                                    weighted avg|       0.95|      0.95|      0.95|      9387|
+
+### 2. EfficientNetV2B3 
+
+#### Configurations
+| Name | Details |
+|---|---|
+| Train data size | 8012 |
+| Test Data Size | 2003 |
+| Training Batch size | 128 |
+| Number of Epochs | 20 |
+| Optimizer  | adam |
+
+Total params: 12,947,525
+Trainable params: 13,831
+Non-trainable params: 12,933,694
+
+#### Performance
+
+|                Classs                                 |precision|    recall|  f1-score|   support|
+|---|---|---|---|---|
+|                                melanocytic nevi|       0.62|      0.50|      0.55 |       62|
+|                                        melanoma|       0.76|      0.74|      0.75 |      102|
+|                   benign keratosis-like lesions|       0.75|      0.68|      0.71 |      207|
+|                            basal cell carcinoma|       0.87|      0.59|      0.70 |       22|
+|              pyogenic granulomas and hemorrhage|       0.68|      0.54|      0.60 |      252|
+|Actinic keratoses and intraepithelial carcinomae|       0.89|      0.95|      0.92 |     1330|
+|                                  dermatofibroma |      0.81 |     0.79|      0.80 |       28|
+||
+ |                                       accuracy|           |          |      0.84 |     2003|
+ |                                      macro avg|       0.77 |     0.68 |     0.72 |     2003|
+ |                                   weighted avg |      0.83 |     0.84|      0.84 |     2003|
+
+## Conclusion
+
+- Custom Algorithm was selected as the main algorithm due to has a higher test accuracy.
+- A Website was developed using Django Frame work for the deploymet of the ML model.
+
+### Website preview
+ <img src= "assets/website.png">
 
 
-## About the Capstone Project ⁉️
-The main objective behind this project is to use what you learned during the Bootcamp including all libraries and skills that you have gained. Moreover, to evaluate learning outcomes by applying the main concepts using related technologies such as NumPy, pandas, matplotlib, seaborn, Plotly, and scikit-learn. We aim to apply the whole LifeCycle of Data Science and to collaborate as one team on the final project.
-> Remember: In data science, mindset then toolset.
 
 
-## Essential Requirements 📝
-In the capstone project, we will wrap up all skills that you learned in the Data Science LifeCycle in multiple phases as the following.
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204108273-def5e08f-d0ef-408f-9737-eb345b07495e.png" width="500" />
-</p>
-
-### Phase#1: Bussiness Problem 💡
-- You have to find an interesting question or problem and try to answer this question using data science techniques.
-
-### Phase#2: Dataset 💽
-- Pick a suitable dataset that helps you to find reasonable answers to your questions.
-- Choose a real dataset that needs to clean and preprocess.
-- The dataset should have at least 5000 records for Machine Learning Algorithms / 10,000 for Deep Learning Algorithms.
-- Make sure that you really understand your dataset.
-
-### Phase#3: Data Analysis and Preprocessing (Exploratory Data Analysis (EDA)) 🔎📊
-- Apply the essential EDA steps: head, shape, info, describe, and missing values.
-- Draw at least 10 interactive charts that give an overview of your data.
-- The charts should have proper formatting including XY-Axis labels and the main title.
-- Create an interactive dashboard using Plotly.
-
-### Phase#4: Data Modeling (Machine Learning) 🤖
-- Choose three to five proper ML Algorithms.
-- Show the reasons behind your choices of ML Algorithms - the reasons must be based on a trusted resource.
-- Use two splitting methods (train-test split and cross-validation split).
-
-### Phase#5: Model Evaluation (Model Tuning) 🎛
-- Report appropriate evaluation metrics for each model.
-- Display the used techniques for accuracy enhancement.
-- Create a chart that compares the final results of your selected models.
-
-### Phase#6: Model Deployment 🖥
-- Convert your model to .pkl format.
-- Use Django to deploy your model on a website.
-
-### Phase#7: Conclusion 🏁
-- Write a final conclusion and recommendations (your interpretation of the results).
-
-
-## Final Deliverables 📦
-Each team has to create a capstone project repository with the following files:
-1. Notebook file(.ipynb).
-2. Dataset file.
-3. README.md file with the following sections.
-    1. Project Title.
-    2. Team members with the role of each one.
-    3. Introduction about your project.
-    4. Dataset Overview.
-    5. Proposed Algorithms.
-    6. Final Results and conclusion.
-    
-> **Note:** Please, use the **proper Markdown format** for readability reasons 🤓🙏.
-
+> This project was cooprative work between all team members.
+> 
+>> FinalVersion(06-March-2023)
