@@ -1,71 +1,30 @@
-# Capstone Project 🎓🥳
+# Project Title
+### Who is the Reciter (من القارئ)
 
 
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204110091-be66e56a-629b-417b-88b7-8df7f29e5fd0.png" width="700" />
-</p>
+## Introduction
+We have trained Deep Learning model that can accurately classify Quran recitations based on the audio input and return the name of the reciter. The model was later deployed as a Telegram Bot, providing users with the ability to receive automatic classification of Quran recitations through audio input.
+
+## Dataset Overview
+The Quran Recitation Audio Classification Dataset is a collection of audio recordings of Quran recitations from various reciters. The dataset consists of folders named after each reciter, with audio files in WAV format inside each folder and we have provided a csv file that contains the path of each file along with it's class. The audio files were recorded by a team in different acoustic environments, providing a diverse range of audio samples for training and testing a deep learning model. Here is a [link](https://www.kaggle.com/datasets/mohammedalrajeh/quran-recitations-for-audio-classification) of dataset in kaggle 
+
+ 
+## Used Algorithms.
+We have used number of deep learning and machine learning algorithms to classifiy the reciters based on the MFCC and we have found that best number of MFCC to extract is 128 and the model that gave us the best result was ANN.
+
+## Final results and Conclusion
+We are pleased to report that our deep learning model successfully predicts the name of a Quran reciter with remarkable accuracy using only a brief sound clip. This project has equipped us with the skills necessary to effectively process and analyze audio files, and to refine our algorithm to make informed predictions.
+
+| Model | precision | recall | f1-score |accuracy |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| ANN | 96% | 95% | 95% | 95% |
+| RNN | 95% | 96% | 95% | 96% |
 
 
-## About the Capstone Project ⁉️
-The main objective behind this project is to use what you learned during the Bootcamp including all libraries and skills that you have gained. Moreover, to evaluate learning outcomes by applying the main concepts using related technologies such as NumPy, pandas, matplotlib, seaborn, Plotly, and scikit-learn. We aim to apply the whole LifeCycle of Data Science and to collaborate as one team on the final project.
-> Remember: In data science, mindset then toolset.
-
-
-## Essential Requirements 📝
-In the capstone project, we will wrap up all skills that you learned in the Data Science LifeCycle in multiple phases as the following.
-<p> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/89189772/204108273-def5e08f-d0ef-408f-9737-eb345b07495e.png" width="500" />
-</p>
-
-### Phase#1: Bussiness Problem 💡
-- You have to find an interesting question or problem and try to answer this question using data science techniques.
-
-### Phase#2: Dataset 💽
-- Pick a suitable dataset that helps you to find reasonable answers to your questions.
-- Choose a real dataset that needs to clean and preprocess.
-- The dataset should have at least 5000 records for Machine Learning Algorithms / 10,000 for Deep Learning Algorithms.
-- Make sure that you really understand your dataset.
-
-### Phase#3: Data Analysis and Preprocessing (Exploratory Data Analysis (EDA)) 🔎📊
-- Apply the essential EDA steps: head, shape, info, describe, and missing values.
-- Draw at least 10 interactive charts that give an overview of your data.
-- The charts should have proper formatting including XY-Axis labels and the main title.
-- Create an interactive dashboard using Plotly.
-
-### Phase#4: Data Modeling (Machine Learning) 🤖
-- Choose three to five proper ML Algorithms.
-- Show the reasons behind your choices of ML Algorithms - the reasons must be based on a trusted resource.
-- Use two splitting methods (train-test split and cross-validation split).
-
-### Phase#5: Model Evaluation (Model Tuning) 🎛
-- Report appropriate evaluation metrics for each model.
-- Display the used techniques for accuracy enhancement.
-- Create a chart that compares the final results of your selected models.
-
-### Phase#6: Model Deployment 🖥
-- Convert your model to .pkl format.
-- Use Django to deploy your model on a website.
-
-### Phase#7: Conclusion 🏁
-- Write a final conclusion and recommendations (your interpretation of the results).
-
-
-## Final Deliverables 📦
-Each team has to create a capstone project repository with the following files:
-1. Notebook file(.ipynb).
-2. Dataset file.
-3. README.md file with the following sections.
-    1. Project Title.
-    2. Team members with the role of each one.
-    3. Introduction about your project.
-    4. Dataset Overview.
-    5. Proposed Algorithms.
-    6. Final Results and conclusion.
-    
-> **Note:** Please, use the **proper Markdown format** for readability reasons 🤓🙏.
-
-### Project Deadline (5 Mar at 9:00 am)
+## Team members
+| Team members      | Role                                                                                                                             |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Suliman Alsaadan   | collected data manually, apply Deep Learning model , helped in README markdown file and helped in telegram bot.                       |
+| Mohammed Alrajeh (LEADER) | collected data manually, created telegram bot, helped in Deep Learning model, created the presentation and helped in README markdown file.|
+| Faris Alshammari  | collected data manually, helped in Deep Learning model , helped in telegram bot , and wrote README markdown file.               |
 
